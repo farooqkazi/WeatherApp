@@ -9,7 +9,7 @@ sudo: false
 
 notifications:
     email:
-        - v.boyadzhiev93@gmail.com
+        - mohammedfarooqkazi@gmail.com
 
 #Next, add above lines to your .travis.yml file. The line under the matrix section defines the Android API version and the processor architecture,
 #on which the code will be tested. These lines re-executes the script for each variable. So if I write another line with: “– ANDROID_TARGET=android-16 ANDROID_ABI=armeabi-v7a”, it will execute the whole script with the 21, 19 and 16 APIs. We can say it is really useful to test different API levels.
