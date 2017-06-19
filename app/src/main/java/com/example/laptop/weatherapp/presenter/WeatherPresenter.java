@@ -28,8 +28,9 @@ public class WeatherPresenter implements WeatherContract.IWeatherPresenter{
         this.interactor = interactor;
     }
 
+
     @Override
-    public void bind(WeatherContract.IView view) {
+    public void bindView(WeatherContract.IView view) {
         this.weatherView = view;
         compositeDisposable = new CompositeDisposable();
     }
@@ -51,7 +52,7 @@ public class WeatherPresenter implements WeatherContract.IWeatherPresenter{
                     @Override
                     public void onNext(Result result) {
 
-                        weatherView.receiveWeather(result.getList());
+                        weatherView.shouldShowDataInRecyclerView(result.getList());
                     }
 
                     @Override

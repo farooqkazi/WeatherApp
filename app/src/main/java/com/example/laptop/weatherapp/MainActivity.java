@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements WeatherContract.I
         //Step 14 : Injection Activity
         ((MyApp)getApplication()).getWeatherComponent().inject(this);
 
-        presenter.bind(this);
+        presenter.bindView(this);
         initialiseRecyclerView();
         presenter.fetchWeather();
 //        callService();
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements WeatherContract.I
     }
 
     @Override
-    public void receiveWeather(java.util.List<List> weather_list) {
+    public void shouldShowDataInRecyclerView(java.util.List<List> weather_list) {
 
         rvWeather.setAdapter(new WeatherAdapter(weather_list, R.layout.row_weather, getApplicationContext()));
     }

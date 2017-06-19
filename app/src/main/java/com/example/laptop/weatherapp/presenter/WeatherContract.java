@@ -10,13 +10,13 @@ public interface WeatherContract {
 
     interface IWeatherPresenter{
 
-        void bind(IView view);
+        void bindView(IView view);
         void unbind();
         void fetchWeather();
     }
 
     interface IView{
 
-        void receiveWeather(List<com.example.laptop.weatherapp.model.List> weather_list);
+        void shouldShowDataInRecyclerView(List<com.example.laptop.weatherapp.model.List> weather_list);
     }
 }

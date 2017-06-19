@@ -98,11 +98,11 @@ public class WeatherPresenterTest {
         when(interactor.getResultUseCase(Constants.CITY_ID, Constants.API_KEY))
                 .thenReturn(Observable.just(result));
 
-        presenter.bind(iWeatherView);
+        presenter.bindView(iWeatherView);
         presenter.fetchWeather();
         presenter.unbind();
 
-        Mockito.verify(iWeatherView).receiveWeather(lists);
+        Mockito.verify(iWeatherView).shouldShowDataInRecyclerView(lists);
     }
 
 
