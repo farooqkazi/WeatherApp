@@ -1,4 +1,4 @@
-# WeatherTestApp
+# Weather Appliation 
 
 Simple Weather Application uses 5 Day Weather API to showcase weather in New Delhi
 
