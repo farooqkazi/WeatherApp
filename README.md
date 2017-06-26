@@ -1,2 +1,5 @@
 # WeatherTestApp
-[![Build Status](https://travis-ci.org/jedimg/weather-app.svg?branch=master)](https://travis-ci.org/jedimg/weather-app)
+
+Simple Weather Application uses 5 Day Weather API to showcase weather in New Delhi
+
+Libraries : Retrofit, OkHttp, Rxjava 2.0, Dagger2.
